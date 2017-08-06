@@ -27,6 +27,42 @@ pip install datascience
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### v0.10.0
+
+- Added `group_barh` and `group_bar` to plot counts by a grouping category,
+  a common use case.
+- Added options to `hist` to produce a histogram for each group on a
+  column.
+- Deprecated Table method `pivot_hist`.  Added an option to `hist` to
+  simulate `pivot_hist`'s behavior.
+
+### v0.9.5
+
+- DistributionFormatter added.
+
+### v0.9.4
+
+- Fix bug for relabeled columns that had a format already.
+
+### v0.9.3
+
+- Circles bound to values determine the circle area, not radius.
+
+### v0.9.2
+
+- Scatter diagrams can take data-driven size and color parameters.
+
+### v0.9.1
+
+- Changed signature of `apply`, `hist`, and `bin` to accept multiple columns without a list
+- Deprecate `hist` argument name `counts` in favor of `bin_column`
+- Rename various positional args (technically could break some code, but won't)
+- Unified `with_column` and `with_columns` (not a breaking change)
+- Unified `group` and `groups` (not a breaking change)
+
+### v0.9.0
+- Added "Table.remove"
+
 ### v0.8.2
 
 - Added `proportions_from_distribution` method to `datascience.util`.
@@ -66,7 +102,7 @@ If you encounter an `Image not found` error on **Mac OSX**, you may need an
 
 Start by cloning this repository:
 
-    git clone https://github.com/dsten/datascience
+    git clone https://github.com/data-8/datascience
 
 Install the dependencies into a [Conda environment][envs] with:
 
